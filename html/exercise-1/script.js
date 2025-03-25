@@ -1,0 +1,1 @@
+let myDialog = document.getElementById("body__rights");
