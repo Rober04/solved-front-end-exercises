@@ -3,10 +3,11 @@ interface Animal{
     canEat: boolean,
     canDrink: boolean,
     canSleep: boolean,
-    canFly: boolean
 };
 
-type Bird = Animal;
+type Bird = Animal &{
+    canFly: boolean;
+};
 
 type Dog = Animal &{
     race: "Husky" | "Labrador" | "Chucho",
@@ -32,7 +33,6 @@ const dog: Dog = {
     canEat: true,
     canDrink: true,
     canSleep: true,
-    canFly: false,
     race: "Husky",
     age: 3
 }
