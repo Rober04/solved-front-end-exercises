@@ -13,6 +13,12 @@ type Dog = Animal &{
     age: number
 }
 
+type Cat = Pick<Animal, "name" | "canSleep"> &{
+    color: string
+};
+
+type Snake = Pick<Animal, "canEat" | "canDrink" | "canSleep">;
+
 const bird: Bird = {
     name: "Quasimodo",
     canEat: true,
@@ -31,5 +37,19 @@ const dog: Dog = {
     age: 3
 }
 
+const cat: Cat = {
+    name: "Eustaquio",
+    color: "Naranja",
+    canSleep: true
+}
+
+const snake: Snake = {
+    canEat: true,
+    canDrink: true,
+    canSleep: true
+}
+
 console.log(bird);
 console.log(dog);
+console.log(cat);
+console.log(snake);
