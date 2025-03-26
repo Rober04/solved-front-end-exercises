@@ -9,7 +9,7 @@ interface Animal{
 type Bird = Animal;
 
 type Dog = Animal &{
-    race: string,
+    race: "Husky" | "Labrador" | "Chucho",
     age: number
 }
 
@@ -27,7 +27,7 @@ const dog: Dog = {
     canDrink: true,
     canSleep: true,
     canFly: false,
-    race: "Dalmata",
+    race: "Husky",
     age: 3
 }
 
