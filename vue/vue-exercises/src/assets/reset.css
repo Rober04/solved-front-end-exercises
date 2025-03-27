@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+}
+table,
+tr,
+td,
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+article,
+section,
+header,
+footer,
+aside,
+details,
+menu{
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+ol,
+ul{
+    list-style: none;
+}
