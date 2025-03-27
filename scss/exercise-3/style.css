@@ -1,0 +1,33 @@
+.borja {
+    color: rgb(119, 67, 24);
+    font-size: 2em;
+  }
+  .borja__cabeza {
+    text-decoration: underline;
+  }
+  .borja__ojo {
+    color: rgb(0, 110, 255);
+    font-size: 1.2em;
+  }
+  .borja__ojo--tuerto {
+    color: rgb(0, 110, 255);
+    text-decoration: line-through;
+    font-size: 1em;
+  }
+  .borja__nariz {
+    color: purple;
+  }
+  .borja__boca {
+    color: rgb(204, 0, 255);
+  }
+  .borja__cuerpo {
+    font-size: 1.5em;
+  }
+  .borja__pierna {
+    font-size: 1.5em;
+    color: green;
+  }
+  .borja__pierna--pocha {
+    font-size: 1.2em;
+    color: red;
+  }

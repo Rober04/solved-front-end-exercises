@@ -1,0 +1,36 @@
+.borja{
+    color: rgb(119, 67, 24);
+    font-size: 2em;
+    
+    &__cabeza{
+        text-decoration: underline;
+    }
+    &__ojo{
+        color: rgb(0, 110, 255);
+        font-size: 1.4em;
+
+        &--tuerto{
+            color: rgb(0, 110, 255);
+            text-decoration: line-through;
+            font-size: 1em;
+        }
+    }
+    &__nariz{
+        color:purple;
+    }
+    &__boca{
+        color: rgb(204, 0, 255);
+    }
+    &__cuerpo{
+        font-size: 1.5em;
+    }
+    &__pierna{
+        font-size: 1.5em;
+        color: green;
+
+        &--pocha{
+            font-size: 1.2em;
+            color: red;
+        }
+    }
+}
