@@ -1,0 +1,28 @@
+h1 {
+    color: #3498db;
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    color: #cc2e2e;
+    font-size: 2em;
+  }
+  
+  h3 {
+    color: #c292ee;
+    font-size: 1.5em;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #cc2e2e;
+    font-size: 1em;
+    transition: all 0.5s ease-in-out;
+    scale: 1;
+  }
+  
+  button:hover {
+    background-color: #cc2e2e;
+    color: #3498db;
+    scale: 1.1;
+  }
