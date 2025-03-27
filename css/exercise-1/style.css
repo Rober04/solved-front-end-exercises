@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #00ff00;
+    --tertiary-color: #0000ff;
+    --title-size: 2.5em;
+    --subtitle-size: 2em;
+    --smaller-size-title: 1.5em;
+    --paragraph-size: 1em;
+    --smooth-transition: all 0.3s ease-in-out;
+}
+h1{
+    color: var(--primary-color);
+    font-size: var(--title-size);
+}
+h2{
+    color: var(--secondary-color);
+    font-size: var(--subtitle-size);
+}
+h3{
+    color: var(--tertiary-color);
+    font-size: var(--smaller-size-title);
+}
+button{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: var(--paragraph-size);
+    transition: var(--smooth-transition);
+    scale: 1;
+}
+button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    scale: 1.1;
+}
