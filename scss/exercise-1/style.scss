@@ -1,0 +1,39 @@
+$primary-color: #3498db;
+$secondary-color: #cc2e2e;
+$tertiary-color: #c292ee;
+$background-color: #f4f4f4;
+$text-color: #333;
+
+$paragraph-size: 1em;
+$smaller-size-title: 1.5em;
+$subtitle-size: 2em;
+$title-size: 2.5em;
+
+$transition-fast: all 0.2s ease-in-out;
+$transition-medium: all 0.5s ease-in-out; 
+$transition-slow: all 0.75s ease-in-out;
+
+h1{
+    color: $primary-color;
+    font-size: $title-size;
+}
+h2{
+    color: $secondary-color;
+    font-size: $subtitle-size;
+}
+h3{
+    color: $tertiary-color;
+    font-size: $smaller-size-title;
+}
+button{
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: $paragraph-size;
+    transition: $transition-medium;
+    scale: 1;
+}
+button:hover{
+    background-color: $secondary-color;
+    color: $primary-color;
+    scale: 1.1;
+}
