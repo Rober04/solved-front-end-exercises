@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import TheTitle from '@/components/TheTitle.vue'
+import TheCounter from '@/components/TheCounter.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <TheTitle><slot name="propTitle"></slot></TheTitle>
+      <TheCounter></TheCounter>
     </div>
   </header>
 
