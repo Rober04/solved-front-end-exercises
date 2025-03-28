@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Formulary</title>
+</head>
+<body>
+    <h1 title="formulary">Formulary</h1>
+    <form action="about:blank" method="post" aria-label="formulary" target="_blank">
+        <label for="name" aria-required="true">Name: </label>
+        <input type="text" name="name" id="name" tabindex="1" placeholder="Name" required>
+        
+        <label for="last" aria-required="true">Last name: </label>
+        <input type="text" name="last" id="last" tabindex="1" placeholder="Last Name" required>
+
+        <label for="age" aria-required="true">Age: </label>
+        <input type="number" name="age" id="age" tabindex="1" placeholder="0" required>
+
+        <label for="email" aria-required="true">Email: </label>
+        <input type="email" name="email" id="email" tabindex="1" placeholder="user@example.com">
+        <small>Enter a valid email address (e.g., user@example.com)</small>
+
+        <fieldset>
+            <legend>Agree to the terms?</legend>
+
+            <label for="agree" aria-required="true">Agree</label>
+            <input type="radio" name="agree" id="terms" value="Agree" tabindex="2" aria-label="Agree to the terms">
+
+            <label for="disagree">Disagree</label>
+            <input type="radio" name="terms" id="disagree" value="Disagree" tabindex="3" aria-label="Disagree to the terms">
+        </fieldset>
+        <fieldset>
+            <legend>Agree to the terms?</legend>
+            
+            <label for="agree" aria-required="true">Agree</label>
+            <input type="checkbox" name="agree" id="terms" value="Agree" tabindex="4" aria-label="Agree to the terms">
+
+            <label for="disagree">Disagree</label>
+            <input type="checkbox" name="terms" id="disagree" value="Disagree" tabindex="5" aria-label="Disagree to the terms">
+        </fieldset>
+        <input type="submit" value="Submit" tabindex="6" aria-label="Submit the form">
+    </form>
+</body>
+</html>
