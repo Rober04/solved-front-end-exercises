@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import TheTitle from '@/components/TheTitle.vue'
+const propTitle = 'Vue Exercises'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <TheTitle></TheTitle>
+      <TheTitle :propTitle="propTitle"></TheTitle>
     </div>
   </header>
 

@@ -1,6 +1,10 @@
+<script setup lang="ts">
+defineProps<{ propTitle: string }>()
+</script>
+
 <template>
   <div>
-    <h2>Título estático</h2>
+    <h2>{{ propTitle }}</h2>
   </div>
 </template>
 
