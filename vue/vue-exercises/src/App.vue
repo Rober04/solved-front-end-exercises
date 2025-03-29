@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import TheCounter from '@/components/TheCounter.vue'
+import ProductCard from '@/components/ProductCard.vue';
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <TheCounter></TheCounter>
+      <ProductCard/>
     </div>
   </header>
 
-  <RouterView />
+  <RouterView/>
 </template>
 
 <style scoped>
