@@ -1,29 +1,14 @@
 <script setup lang="ts">
-import { computed, watch } from 'vue';
+import { storeToRefs } from 'pinia';
 import TheTitle from './TheTitle.vue'
-import { incrementCounter, decrementCounter, counter } from '@/composables/CounterComposable'
+import { useCounterStore } from '@/store/counter'
 
-const MULTIPLIED_VALUE = 2;
-const counterMultiplier = computed(() => {return counter.value * MULTIPLIED_VALUE});
+const counterStore = useCounterStore();
+const { counter, counterMultiplier, message } = storeToRefs(counterStore);
+const { incrementCounter, decrementCounter } = counterStore;
 
 const MINIMUM_VALUE = 0;
 const MAXIMUM_VALUE = 10;
-let message = "";
-watch(counter, (newCounter) => {
-  switch (newCounter) {
-    case MINIMUM_VALUE:
-      message = "Estas en el valor minimo"
-      break;
-    case MAXIMUM_VALUE:
-      message = "Estas en el valor maximo"
-      break;
-
-    default:
-      message = "Estas en los parámetros adecuados"
-      break;
-  }
-},
-{ immediate: true });
 </script>
 
 <template>
