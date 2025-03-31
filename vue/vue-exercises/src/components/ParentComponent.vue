@@ -1,14 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { provide, ref } from 'vue';
 import ChildComponent from './ChildComponent.vue';
-const message = ref("")
+const messageChild = ref("")
+const messageParent = ref("Hello from the parent component")
+
+provide("messageParent", messageParent);
 </script>
 
 <template>
   <div class="parent">
     <h1>Parent Component</h1>
-    <p>{{message}}</p>
-    <ChildComponent class="parent__child" @componentEvent="(text : string)=>{message = text}"></ChildComponent>
+    <p>{{ messageChild }}</p>
+    <ChildComponent class="parent__child" @componentEvent="(text : string)=>{messageChild = text}"></ChildComponent>
   </div>
 </template>
 
@@ -21,6 +24,6 @@ const message = ref("")
       border: 0.1em solid;
       margin: 1em;
       padding: 1em;
-    }  
+    }
   }
 </style>
