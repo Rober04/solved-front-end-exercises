@@ -1,15 +1,17 @@
 <script setup lang="ts">
-
+import HeaderFooter from '~/layouts/HeaderFooter.vue';
 </script>
 
 <template>
-    <div>
-        <h1>Home</h1>
-        <p>Welcome to the home page</p>
-        <NuxtLink to="/catalogo">
-            <button>Catalogo</button>
-        </NuxtLink>
-    </div>
+    <HeaderFooter>
+        <div>
+            <h1>Home</h1>
+            <p>Welcome to the home page</p>
+            <NuxtLink to="/catalogo">
+                <button>Catalogo</button>
+            </NuxtLink>
+        </div>
+    </HeaderFooter>
 </template>
 
 <style lang="scss" scoped>
