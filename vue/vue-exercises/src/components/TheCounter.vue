@@ -1,15 +1,6 @@
 <script setup lang="ts">
 import TheTitle from './TheTitle.vue'
-import { ref } from 'vue'
-
-const counter = ref(0)
-
-function increment() {
-  counter.value++
-}
-function decrement() {
-  counter.value--
-}
+import { incrementCounter, decrementCounter, counter } from './composables/CounterComposable'
 </script>
 
 <template>
@@ -18,8 +9,8 @@ function decrement() {
       <TheTitle><slot name="propTitle"></slot></TheTitle>
     </h2>
     <span>{{ counter }}</span>
-    <button @click="increment" v-if="counter < 10">Increment</button>
-    <button @click="decrement" v-if="counter > 0">Decrement</button>
+    <button @click="incrementCounter" v-if="counter < 10">Increment</button>
+    <button @click="decrementCounter" v-if="counter > 0">Decrement</button>
   </div>
 </template>
 
