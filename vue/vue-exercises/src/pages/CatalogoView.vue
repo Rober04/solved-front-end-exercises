@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import ProductCard from '@/components/ProductCard.vue';
-import { products } from "../../data/mock.ts";
+import { products } from "../../data/mock";
 import { RouterLink } from 'vue-router';
 </script>
 
 <template>
     <div class="catalogue">
-        <ProductCard v-for="product in products" :key="product.id" :product="product"></ProductCard>    
+        <ProductCard v-for="product in products" :key="product.id" v-bind="product"></ProductCard>
     </div>
     <RouterLink to="/">
             <button type="button">Go to home</button>

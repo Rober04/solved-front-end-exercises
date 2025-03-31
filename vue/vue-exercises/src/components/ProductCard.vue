@@ -1,13 +1,14 @@
 <script setup lang="ts">
-    defineProps(['product']);
+  import type { Product } from '../../data/mock';
+  defineProps<Product>();
 </script>
 
 <template>
     <div class="product__card">
-        <h2 class="product__title">{{ product.title }}</h2>
-        <img :src="product.image" alt="image" class="product__image">
-        <p class="product__description">{{ product.description }}</p>
-        <span class="product__price">{{ product.price }}</span>
+        <h2 class="product__title">{{ $props.title }}</h2>
+        <img :src="$props.image" alt="image" class="product__image">
+        <p class="product__description">{{ $props.description }}</p>
+        <span class="product__price">{{ $props.price }}</span>
         <button type="button" class="product__button">Add to cart</button>
     </div>
 </template>
