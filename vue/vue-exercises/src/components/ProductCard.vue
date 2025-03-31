@@ -1,9 +1,9 @@
 <script setup lang="ts">
-    import { products } from "../../data/mock.ts";
+    defineProps(['product']);
 </script>
 
 <template>
-    <div v-for="product in products" :key="product.id" class="product__card">
+    <div class="product__card">
         <h2 class="product__title">{{ product.title }}</h2>
         <img :src="product.image" alt="image" class="product__image">
         <p class="product__description">{{ product.description }}</p>
@@ -26,6 +26,8 @@
             justify-content: center;
             align-items: center;
             background-color: #f4f4f4;
+            width: 15em;
+            border-radius: 1em;
         }
         &__title{
             font-size: 1.5em;
@@ -41,6 +43,8 @@
             color: rgb(170, 0, 0);
         }
         &__button{
+            border-radius: 0.5em;
+            color: rgb(21, 122, 89);
             font-size: 1.2em;
             margin: 1em;
         }
