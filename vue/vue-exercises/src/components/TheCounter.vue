@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, watch } from 'vue';
 import TheTitle from './TheTitle.vue'
-import { incrementCounter, decrementCounter, counter } from './composables/CounterComposable'
+import { incrementCounter, decrementCounter, counter } from '@/composables/CounterComposable'
 
 const MULTIPLIED_VALUE = 2;
 const counterMultiplier = computed(() => {return counter.value * MULTIPLIED_VALUE});
@@ -22,7 +22,8 @@ watch(counter, (newCounter) => {
       message = "Estas en los parámetros adecuados"
       break;
   }
-});
+},
+{ immediate: true });
 </script>
 
 <template>
