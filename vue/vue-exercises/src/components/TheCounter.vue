@@ -8,7 +8,7 @@ import { incrementCounter, decrementCounter, counter } from './composables/Count
     <h2>
       <TheTitle><slot name="propTitle"></slot></TheTitle>
     </h2>
-    <span>{{ counter }}</span>
+    <span :class="counter < 5 ? 'red' : 'green'">{{ counter }}</span>
     <button @click="incrementCounter" v-if="counter < 10">Increment</button>
     <button @click="decrementCounter" v-if="counter > 0">Decrement</button>
   </div>
@@ -20,5 +20,11 @@ import { incrementCounter, decrementCounter, counter } from './composables/Count
 }
 button {
   margin: 1em;
+}
+.green{
+  color: green
+}
+.red{
+  color: red
 }
 </style>
