@@ -1,39 +1,41 @@
-# vue-exercises
+# Exercise 11 Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+## ¿Qué es un linter?
 
-## Recommended IDE Setup
+Es una herramienta de estandirización de código
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ¿Qué es Husky?
 
-## Type Support for `.vue` Imports in TS
+Una herramienta para la automatización de procesos
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## ¿Qué es la reactividad?
 
-## Customize configuration
+La capacidad de permitir al usuario hacer y visualizar cambios en tiempo real
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ¿Desde dónde hay que crear todas las ramas para los desarrollos?
 
-## Project Setup
+Desde la main
 
-```sh
-npm install
-```
+## ¿Cuándo se puede utilizar la rama main?
 
-### Compile and Hot-Reload for Development
+Nunca
 
-```sh
-npm run dev
-```
+## ¿Qué son las custom properties?
 
-### Type-Check, Compile and Minify for Production
+Variables de CSS
 
-```sh
-npm run build
-```
+## Diferencias entre v-if y v-show
 
-### Lint with [ESLint](https://eslint.org/)
+La diferencia principal es que v-if puede eliminar el contenido del DOM mientras que v-show solo le aplica "display: none"
 
-```sh
-npm run lint
-```
+## ¿Cuáles son los valores de falsy?
+
+NULL, undefined, false, 0, -0, 0n, "", document.all
+
+## ¿Qué es Nullish Coalescing Operator?
+
+Le indica a la variable que, en caso de ser NULL, adquiera un valor por defecto ```const variable1 = variable2 ?? ''```
+
+## ¿Para que se utiliza TypeScript?
+
+Para definir tipos en JavaScript, lo que asegura que los valores de las variables empleadas son del tipo correcto
