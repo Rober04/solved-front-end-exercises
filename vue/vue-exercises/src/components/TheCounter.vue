@@ -12,26 +12,28 @@ const MAXIMUM_VALUE = 10;
 </script>
 
 <template>
-  <div>
+  <div class="home__counter counter">
     <TheTitle><slot name="propTitle"></slot></TheTitle>
-    <h2>{{ counterMultiplier }}</h2>
-    <span :class="counter === MAXIMUM_VALUE ? 'red' : 'green'">{{ counter }}, {{ message }}</span>
-    <button @click="incrementCounter" v-if="counter < MAXIMUM_VALUE">Increment</button>
-    <button @click="decrementCounter" v-if="counter > MINIMUM_VALUE">Decrement</button>
+    <h2 class="counter__title">{{ counterMultiplier }}</h2>
+    <span :class="'counter__' + (counter === MAXIMUM_VALUE ? 'red' : 'green')">{{ counter }}, {{ message }}</span>
+    <button @click="incrementCounter" v-if="counter < MAXIMUM_VALUE" class="counter__button">Increment</button>
+    <button @click="decrementCounter" v-if="counter > MINIMUM_VALUE" class="counter__button">Decrement</button>
   </div>
 </template>
 
 <style lang="scss" scoped>
-* {
-  font-size: 1.1em;
-}
-button {
-  margin: 1em;
-}
-.green{
-  color: green
-}
-.red{
-  color: red
+.counter{
+  &__title{
+    color: rgb(21, 122, 89);
+  }
+  &__green{
+    color: green;
+  }
+  &__red{
+    color: red;
+  }
+  &__button{
+    margin: 1em;
+  }
 }
 </style>

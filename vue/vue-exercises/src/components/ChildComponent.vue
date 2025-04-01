@@ -10,13 +10,17 @@ function componentEvent() {
 </script>
 
 <template>
-  <div>
-    <h2>Child Component</h2>
-    <p>{{ messageParent }}</p>
-    <button @click="componentEvent">Send Event</button>
+  <div class="parent__child child">
+    <h3 class="child__title">Child Component</h3>
+    <p class="child__message--parent">{{ messageParent }}</p>
+    <button class="child__button" @click="componentEvent">Send Event</button>
   </div>
 </template>
 
 <style lang="scss" scoped>
-
+  .parent__child{
+    border: 0.1em solid;
+    margin: 1em;
+    padding: 1em;
+  }
 </style>

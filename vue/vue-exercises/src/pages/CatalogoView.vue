@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div class="catalogue">
+    <div class="product">
         <ProductCard v-for="product in products" :key="product.id" v-bind="product"></ProductCard>
     </div>
     <RouterLink to="/">
@@ -14,7 +14,7 @@ import { RouterLink } from 'vue-router';
 </template>
 
 <style lang="scss" scoped>
-    .catalogue{
+    .product{
         display: flex;
         justify-content: center;
         width: 100%;
