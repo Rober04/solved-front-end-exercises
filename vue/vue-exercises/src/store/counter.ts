@@ -1,33 +1,33 @@
 import { defineStore } from "pinia";
 import { computed, ref, watch } from 'vue'
 export const useCounterStore = defineStore("counter", () => {
-    
+
     const counter = ref(0);
-    
+
     function incrementCounter(){
       counter.value++;
     }
     function decrementCounter(){
       counter.value--;
     }
-    let message = "";
+    const message = ref("");
     watch(counter, (newCounter) => {
       switch (newCounter) {
         case 0:
-          message = "Estas en el valor minimo"
+          message.value = "Estas en el valor minimo"
           break;
         case 10:
-          message = "Estas en el valor maximo"
+          message.value = "Estas en el valor maximo"
           break;
-    
+
         default:
-          message = "Estas en los parámetros adecuados"
+          message.value = "Estas en los parámetros adecuados"
           break;
       }
     },
     { immediate: true });
-    
+
     const counterMultiplier = computed(() => {return counter.value * 2});
-    
+
     return { counter, incrementCounter, decrementCounter, message, counterMultiplier };
 });
