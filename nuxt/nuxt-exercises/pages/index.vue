@@ -10,6 +10,9 @@ import HeaderFooter from '~/layouts/HeaderFooter.vue';
             <NuxtLink to="/catalogo">
                 <button>Catalogo</button>
             </NuxtLink>
+            <NuxtLink to="/series-bonitas">
+                <button>Series bonitas</button>
+            </NuxtLink>
         </div>
     </HeaderFooter>
 </template>
