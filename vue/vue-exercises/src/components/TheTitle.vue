@@ -1,15 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h2><propTitle>Vue Exercises</propTitle></h2>
-  </div>
+  <h1 class="home__title"><propTitle>Vue Exercises</propTitle></h1>
 </template>
 
 <style scoped>
-h2 {
+.home__title {
   color: rgb(21, 122, 89);
   font-size: 2em;
   border: 0.1em solid;
+  justify-self: center;
 }
 </style>
