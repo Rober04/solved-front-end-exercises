@@ -92,11 +92,11 @@ const items = ref(["Apple", "Banana", "Cherry"]);
 <script setup lang="ts">
 import TheTitle from "@/components/TheTitle.vue";
 import TheButton from "@/components/TheButton.vue";
-import { computed } from "vue";
+import { computed, toRefs } from "vue";
 import { useCounterStore } from "@/stores/counter";
 
 const counterStore = useCounterStore();
-const { count, message, incrementCounter, decrementCounter } = counterStore;
+const { count, message, incrementCounter, decrementCounter } = toRefs(counterStore);
 
 const doubleCounter = computed(() =>{return count.value * 2});
 </script>
